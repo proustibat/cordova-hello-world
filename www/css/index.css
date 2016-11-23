@@ -93,8 +93,13 @@ h1 {
 }
 
 .event.received {
-    background-color:#4B946A;
+    background-color:#444444;
     display:none;
+    -webkit-transition: background 3000ms;
+    -moz-transition: background 3000ms;
+    -ms-transition: background 3000ms;
+    -o-transition: background 3000ms;
+    transition: background 3000ms;
 }
 
 @keyframes fade {
@@ -112,4 +117,13 @@ h1 {
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
+}
+
+.btn-click {
+    margin-top: 15px;
+    padding: 10px 30px;
+    border: 0 none;
+    border-radius: 30px;
+    background-color:#4B946A;
+
 }
