@@ -20,9 +20,12 @@ var app = {
 
     $el: null,
     $button: null,
+    $image: null,
+    camera: null,
 
     // Application Constructor
     initialize: function() {
+        console.log("App.initialize");
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
         //document.addEventListener("keydown", this.keyDownTextField.bind(this), false);
     },
@@ -36,20 +39,13 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
+        console.log("App.onDeviceReady");
         this.receivedEvent('deviceready');
-        this.$el = $('.app');
-        this.createButton();
-    },
-
-    createButton: function() {
-      console.log("create button");
-        this.$button = $("<button/>").addClass("btn-click blink").html("Click Me");
-        this.$el.append(this.$button);
-
     },
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
+        console.log("App.receivedEvent: ", id);
 
         $("#"+id).removeClass("blink");
         var parentElement = document.getElementById(id);
@@ -59,8 +55,51 @@ var app = {
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 
-        console.log('Received Event: ' + id);
-    }
+        this.$el = $('.app');
+        this.createButton();
+
+    },
+
+    createButton: function() {
+        console.log("App.createButton");
+        this.$button = $("<button/>").addClass("btn-click blink").html("Click Me");
+        this.$el.append(this.$button);
+        this.$button.on('click', this.onButtonClick.bind(this));
+    },
+
+    onButtonClick: function() {
+        console.log("App.onButtonClick");
+
+        this.$image = $("<img/>");
+        this.$el.append(this.$image);
+
+        console.log(navigator.camera);
+        this.camera = navigator.camera;
+        var cameraOptions = {
+            quality: 100,
+            destinationType: this.camera.DestinationType.FILE_URI,
+            sourceType: this.camera.PictureSourceType.CAMERA,
+            encodingType: this.camera.EncodingType.JPEG,
+            mediaType: this.camera.MediaType.PICTURE
+        };
+        console.log(cameraOptions);
+        this.camera.getPicture(this.onGetPictureSuccess.bind(this), this.onGetPictureError.bind(this), cameraOptions);
+    },
+
+
+
+    onGetPictureSuccess: function(imageData) {
+        console.log("App.onGetPictureSuccess");
+        this.$el.css({
+            "background": "url("+imageData+")",
+            "backgroundSize": "cover"
+        });
+    },
+
+    onGetPictureError: function(message) {
+        console.log("App.onGetPictureError: ", message);
+
+    },
 };
 
 $(document).ready(function() {
