@@ -45,6 +45,7 @@ cordova emulate android
 ```
 
 * **On android device**
+(with a usb connected device)
 ```sh
 npm run compile:js
 cordova run android --device
@@ -57,6 +58,7 @@ cordova emulate ios
 ```
 
 * **On ios device**
+(with a usb connected device)
 ```sh
 npm run compile:js
 cordova run ios --device
