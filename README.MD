@@ -28,7 +28,7 @@ cordova prepare // or npm install
 
 ### Running App
 
-* On your browser
+* **On your browser**
 
 ```sh
 npm start
