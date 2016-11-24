@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "install": "cordova prepare",
-    "start": "cordova serve -l",
-    "build": "cordova build android && cordova build ios",
+    "compile:js": "webpack --optimize-minimize && cp -r src/* www",
+    "start": "npm run compile:js && cordova serve -l",
+    "build": "npm run compile:js && cordova build android && cordova build ios",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,14 @@
   "bugs": {
     "url": "https://github.com/proustibat/cordova-hello-world/issues"
   },
-  "homepage": "https://github.com/proustibat/cordova-hello-world#readme"
+  "homepage": "https://github.com/proustibat/cordova-hello-world#readme",
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-es2015": "^6.18.0"
+  },
+  "dependencies": {
+    "autoroute.js": "^1.0.31",
+    "jquery": "^3.1.1"
+  }
 }
