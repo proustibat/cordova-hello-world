@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "install": "cordova prepare",
+    "start": "cordova serve -l",
+    "build": "cordova build android && cordova build ios",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
