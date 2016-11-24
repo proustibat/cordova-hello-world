@@ -71,13 +71,10 @@ npm run build
 *Note that `npm run build` command runs `cordova build android && cordova build ios`*
 
 ## Help
-Some helpful commands
-
 - Launch Android SDK Manager: run `android sdk`
 - Launch Android Virtual Device Manager: run `android avd`
 - Listing available android virtual devices: run `cordova run android --list`
 - Listing available iOS virtual devices: run `cordova run ios --list`
-
 - While running an app on simulators or devices, you can visit [chrome://inspect/#devices](chrome://inspect/#devices) to debug your android device> For ios device, open safari, find your device in development tab.
 
 
