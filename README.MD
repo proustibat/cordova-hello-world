@@ -1,6 +1,6 @@
 # Cordova Hello World
 
-Simple cordova project using cordova plugins, form ios platform and android platform.
+Simple cordova project using cordova plugins, ios and android platforms.
 
 ## What does this branch do ?
 - Create from the [basis/es6-babel-webpack](https://github.com/proustibat/cordova-hello-world/tree/basis/es6-babel-webpack) branch.
