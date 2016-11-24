@@ -1,15 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.example.hello" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloWorld</name>
+    <name>Cordova Hello World</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Simple cordova project using cordova plugins, ios and android platforms. Application core with ES6, transpiled via babel with Webpack.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="jennifer.proust@gmail.com" href="https://github.com/proustibat">
+        Jennifer Proust
     </author>
     <content src="index.html" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
+    <allow-navigation href="*://*.proustib.at/*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
@@ -26,4 +27,10 @@
     <plugin name="cordova-plugin-camera" spec="~2.3.0" />
     <engine name="ios" spec="~4.3.0" />
     <engine name="android" spec="~6.0.0" />
+
+    <preference name="BackgroundColor" value="0xff0000ff"/>
+    <preference name="DefaultVolumeStream" value="media" />
+    <preference name="ErrorUrl" value="error-page.html"/>
+    <preference name="Fullscreen" value="true" />
+    <preference name="Orientation" value="portrait" />
 </widget>
