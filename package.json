@@ -1,0 +1,20 @@
+{
+  "name": "cordova-hello-world",
+  "version": "1.0.0",
+  "description": "Simple cordova project using cordova plugins, form ios platform and android platform.",
+  "main": "index.js",
+  "scripts": {
+    "install": "cordova prepare",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/proustibat/cordova-hello-world.git"
+  },
+  "author": "Proustibat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/proustibat/cordova-hello-world/issues"
+  },
+  "homepage": "https://github.com/proustibat/cordova-hello-world#readme"
+}
