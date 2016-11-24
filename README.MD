@@ -2,6 +2,8 @@
 
 Simple cordova project using cordova plugins, ios and android platforms.
 
+## What does it do ?
+This is the basis branch: just a cordova hello world project with simple javascript and css, and a cordova camera plugin. 
 
 ## Requirements
 
