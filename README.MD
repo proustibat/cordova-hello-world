@@ -2,7 +2,7 @@
 
 Simple cordova project using cordova plugins, ios and android platforms.
 
-## What does this branch do ?
+## What does it do ?
 It does the basical job from [base](https://github.com/proustibat/cordova-hello-world/blob/base) branch which is the basis branch: just a cordova hello world project with simple javascript and css, and a cordova camera plugin. 
 This branch is merged with the followings:
 - [basis/es6-babel-webpack](https://github.com/proustibat/cordova-hello-world/tree/basis/es6-babel-webpack) branch : 
