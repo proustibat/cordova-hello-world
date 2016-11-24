@@ -1,0 +1,9 @@
+/* iOS overriding style */
+.btn-click {
+    background-color:#5eccff;
+}
+
+
+.platform-info::after {
+    content: 'ios';
+}
