@@ -3,11 +3,12 @@
 Simple cordova project using cordova plugins, ios and android platforms.
 
 ## What does this branch do ?
-- Create from the [master](https://github.com/proustibat/cordova-hello-world/tree/master) branch which is the basis branch.
-- Adds ES6 environment to develop javascript application from src folder. Based on this [Medium article](https://medium.com/france/d%C3%A9velopper-vos-applications-mobiles-en-es6-avec-autoroute-js-et-cordova-1231488d3514#.xdjzr53y6) but not using "autoroute"
-
-- Create from the [basis/es6-babel-webpack](https://github.com/proustibat/cordova-hello-world/tree/basis/es6-babel-webpack) branch.
-- Use *merges* to Customize Each Platform as explained in [this documentation section](https://cordova.apache.org/docs/en/latest/guide/cli/index.html#using-merges-to-customize-each-platform)
+It does the basical job from [base](https://github.com/proustibat/cordova-hello-world/blob/base) branch which is the basis branch: just a cordova hello world project with simple javascript and css, and a cordova camera plugin. 
+This branch is merged with the followings:
+- [basis/es6-babel-webpack](https://github.com/proustibat/cordova-hello-world/tree/basis/es6-babel-webpack) branch : 
+    - Adds ES6 environment to develop javascript application from src folder. Based on this [Medium article](https://medium.com/france/d%C3%A9velopper-vos-applications-mobiles-en-es6-avec-autoroute-js-et-cordova-1231488d3514#.xdjzr53y6) but not using "autoroute"
+- [basis/customize-platforms](https://github.com/proustibat/cordova-hello-world/edit/basis/customize-platforms) branch : 
+    - Use *merges* to Customize Each Platform as explained in [this documentation section](https://cordova.apache.org/docs/en/latest/guide/cli/index.html#using-merges-to-customize-each-platform)
 
 ## Requirements
 
