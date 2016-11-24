@@ -1,6 +1,9 @@
-# Cordova Hello World
+# Cordova Hello World ![Dependencies Updates Status](https://david-dm.org/proustibat/cordova-hello-world.svg)
 
 Simple cordova project using cordova plugins, ios and android platforms.
+
+
+
 
 ## What does it do ?
 It does the basical job from [base](https://github.com/proustibat/cordova-hello-world/tree/base) branch which is the basis branch: just a cordova hello world project with simple javascript and css, and a cordova camera plugin. 
