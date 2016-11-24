@@ -1,4 +1,5 @@
-# Cordova Hello World ![Dependencies Updates Status](https://david-dm.org/proustibat/cordova-hello-world.svg)
+![Dependencies Updates Status](https://david-dm.org/proustibat/cordova-hello-world.svg)
+# Cordova Hello World 
 
 Simple cordova project using cordova plugins, ios and android platforms.
 
