@@ -106,9 +106,3 @@ You can visit chrome://inspect/#devices to debug your android device while runni
 To debug ios device, open safari on your mac, find your device on development tab.
 
 
-//TODO: use jquery from node modules instad of from javascript sources
-
-
-
-
-

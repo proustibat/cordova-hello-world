@@ -1,7 +1,6 @@
-import $ from 'jquery';
 import jQuery from 'jquery';
-window.$ = $;
-window.jQuery = jQuery;
+window.$ = window.jQuery = jQuery;
+
 
 export class HelloWorld {
     /**
@@ -87,5 +86,5 @@ export class HelloWorld {
 
 $(document).ready(function() {
     console.debug("jQuery Ready, now instantiate HelloWorld");
-    var helloWorld = new HelloWorld();
+    new HelloWorld();
 });
