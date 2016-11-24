@@ -8,7 +8,7 @@ Simple cordova project using cordova plugins, ios and android platforms.
 
 ## Requirements
 
-- You'll need Node installed ('brew install node') and NPM ('brew install npm').
+- You'll need [Node](https://nodejs.org/en/download/) installed (or 'brew install node' with homebrew) and NPM.
 - Wanna develop for android platforms? Please read this [installation documentation](https://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html)
 - Wanna develop for ios platforms? Please read this [installation documentation](https://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html)
 - Please be sure [Cordova](https://cordova.apache.org/) is installed before ('npm install -g cordova')
