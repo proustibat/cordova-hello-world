@@ -125,5 +125,15 @@ h1 {
     border: 0 none;
     border-radius: 30px;
     background-color:#4B946A;
+}
 
+.platform-info::after {
+    content: 'generic';
+}
+
+.img-helloworld {
+    display: block;
+    margin: 15px auto 0 auto;
+    width: 50px;
+    height: 50px;
 }

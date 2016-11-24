@@ -1,0 +1,9 @@
+/* Android overriding style */
+.btn-click {
+    background-color: #f46e42;
+}
+
+
+.platform-info::after {
+    content: 'android';
+}
