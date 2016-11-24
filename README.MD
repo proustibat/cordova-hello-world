@@ -19,48 +19,44 @@ This branch is merged with the followings:
 - Be sure for this branch that [Webpack](https://webpack.github.io/docs/usage.html) is globally installed on your system ('npm install -g webpack')
 
 ## Installation
+
 ```sh
-cordova prepare // or npm install
+git clone git@github.com:proustibat/cordova-hello-world.git
+cd cordova-hello-world
+npm install
 ```
+*Note that `npm install` simply runs `cordova prepare` command*
 
 
 ## Usage
 
 ### Running App
 
-* **On your browser**
-
-```sh
-npm start
-```
+* **On your browser**: run `npm start`
 
 *Note that the command above runs `npm run compile:js && cordova serve -l`*
 
-**Then visit [http://localhost:8000/](http://localhost:8000/)**
+Then visit [http://localhost:8000/](http://localhost:8000/)
 
-* **On android simulator**
- 
+* **On android simulator**:
 ```sh
 npm run compile:js
 cordova emulate android
 ```
 
 * **On android device**
- 
 ```sh
 npm run compile:js
 cordova run android --device
 ```
 
 * **On ios simulator**
- 
 ```sh
 npm run compile:js
 cordova emulate ios
 ```
 
 * **On ios device**
- 
 ```sh
 npm run compile:js
 cordova run ios --device
@@ -77,25 +73,11 @@ npm run build
 ## Help
 Some helpful commands
 
-```sh
-android sdk
-```
+- Launch Android SDK Manager: run `android sdk`
+- Launch Android Virtual Device Manager: run `android avd`
+- Listing available android virtual devices: run `cordova run android --list`
+- Listing available iOS virtual devices: run `cordova run ios --list`
 
-```sh
-android avd
-```
-
-```sh
-cordova run android --list
-```
-
-```sh
-cordova run ios --list
-```
-
-_____
-
-You can visit [chrome://inspect/#devices](chrome://inspect/#devices) to debug your android device while running app on it.
-To debug ios device, open safari on your mac, find your device on development tab.
+- While running an app on simulators or devices, you can visit [chrome://inspect/#devices](chrome://inspect/#devices) to debug your android device> For ios device, open safari, find your device in development tab.
 
 
