@@ -3,6 +3,7 @@
 Simple cordova project using cordova plugins, form ios platform and android platform.
 
 ## What does this branch do ?
+- Create from the master branch [https://github.com/proustibat/cordova-hello-world/tree/master](https://github.com/proustibat/cordova-hello-world/tree/master) which is the basis branch.
 - Adds ES6 environment to develop javascript application from src folder, based on this medium article: [https://medium.com/france/d%C3%A9velopper-vos-applications-mobiles-en-es6-avec-autoroute-js-et-cordova-1231488d3514#.xdjzr53y6](https://medium.com/france/d%C3%A9velopper-vos-applications-mobiles-en-es6-avec-autoroute-js-et-cordova-1231488d3514#.xdjzr53y6)
 
 ## Requirements
