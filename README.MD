@@ -7,8 +7,12 @@ It does the basical job from [base](https://github.com/proustibat/cordova-hello-
 This branch is merged with the followings:
 - [basis/es6-babel-webpack](https://github.com/proustibat/cordova-hello-world/tree/basis/es6-babel-webpack) branch : 
     - Adds ES6 environment to develop javascript application from src folder. Based on this [Medium article](https://medium.com/france/d%C3%A9velopper-vos-applications-mobiles-en-es6-avec-autoroute-js-et-cordova-1231488d3514#.xdjzr53y6) but not using "autoroute"
-- [basis/customize-platforms](https://github.com/proustibat/cordova-hello-world/edit/basis/customize-platforms) branch : 
+- [basis/customize-platforms](https://github.com/proustibat/cordova-hello-world/tree/basis/customize-platforms) branch : 
     - Use *merges* to Customize Each Platform as explained in [this documentation section](https://cordova.apache.org/docs/en/latest/guide/cli/index.html#using-merges-to-customize-each-platform)
+- [basis/configuration-customization](https://github.com/proustibat/cordova-hello-world/tree/basis/configuration-customization) branch : 
+    - Adds some configuration parameters following [this documentation about config.xml] (https://cordova.apache.org/docs/en/latest/config_ref/index.html)
+- [basis/crosswalk](https://github.com/proustibat/cordova-hello-world/tree/basis/crosswalk) branch : 
+    - Just add [Cordova Plugin Crosswalk Webview](https://crosswalk-project.org/documentation/cordova.html)
 
 ## Requirements
 
