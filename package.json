@@ -26,7 +26,6 @@
     "babel-preset-es2015": "^6.18.0"
   },
   "dependencies": {
-    "autoroute.js": "^1.0.31",
     "jquery": "^3.1.1"
   }
 }
