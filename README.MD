@@ -19,50 +19,37 @@ Simple cordova project using cordova plugins, ios and android platforms.
 cordova prepare // or npm install
 ```
 
-
 ## Usage
 
 ### Running App
 
-* On your browser
+* **On your browser**: run `npm start`
 
-```sh
-npm start
-```
+*Note that the command above runs `npm run compile:js && cordova serve -l`*
 
-*Command above runs these following commands:*
+Then visit [http://localhost:8000/](http://localhost:8000/)
 
-```sh
-npm run compile:js
-cordova serve -l
-```
-
-**Then visit [http://localhost:8000/](http://localhost:8000/)**
-
-* **On android simulator**
- 
+* **On android simulator**:
 ```sh
 npm run compile:js
 cordova emulate android
 ```
 
 * **On android device**
- 
+(with a usb connected device)
 ```sh
 npm run compile:js
 cordova run android --device
 ```
 
-
 * **On ios simulator**
- 
 ```sh
 npm run compile:js
 cordova emulate ios
 ```
 
 * **On ios device**
- 
+(with a usb connected device)
 ```sh
 npm run compile:js
 cordova run ios --device
@@ -74,38 +61,11 @@ cordova run ios --device
 npm run compile:js
 npm run build
 ```
-Command above runs these 2 following commands
-
-```sh
-cordova build android
-```
-
-```sh
-cordova build ios
-```
+*Note that `npm run build` command runs `cordova build android && cordova build ios`*
 
 ## Help
-Some helpful commands
-
-```sh
-android sdk
-```
-
-```sh
-android avd
-```
-
-```sh
-cordova run android --list
-```
-
-```sh
-cordova run ios --list
-```
-
-_____
-
-You can visit chrome://inspect/#devices to debug your android device while running app on it.
-To debug ios device, open safari on your mac, find your device on development tab.
-
-
+- Launch Android SDK Manager: run `android sdk`
+- Launch Android Virtual Device Manager: run `android avd`
+- Listing available android virtual devices: run `cordova run android --list`
+- Listing available iOS virtual devices: run `cordova run ios --list`
+- While running an app on simulators or devices, you can visit [chrome://inspect/#devices](chrome://inspect/#devices) to debug your android device> For ios device, open safari, find your device in development tab.
