@@ -3,7 +3,7 @@
 Simple cordova project using cordova plugins, form ios platform and android platform.
 
 ## What does this branch do ?
-- Create from the [basis/es6-babel-webpack branch](https://github.com/proustibat/cordova-hello-world/tree/basis/es6-babel-webpack).
+- Create from the [basis/es6-babel-webpack](https://github.com/proustibat/cordova-hello-world/tree/basis/es6-babel-webpack) branch.
 - Use *merges* to Customize Each Platform as explained in [this documentation section](https://cordova.apache.org/docs/en/latest/guide/cli/index.html#using-merges-to-customize-each-platform)
 
 ## Requirements
