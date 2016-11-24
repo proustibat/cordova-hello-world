@@ -8,11 +8,11 @@ Simple cordova project using cordova plugins, ios and android platforms.
 
 ## Requirements
 
-- You'll need Node installed (brew install node)
-- Please be sure cordova is installed before (npm install -g cordova)
-- Wanna develop for android platforms? Please read this installation documentation:[https://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html](https://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html)
-- Wanna develop for ios platforms? Please read this installation documentation:[https://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html](https://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html)
-- Be sure for this branch that webpack is globally installed on your system (npm install -g webpack)
+- You'll need Node installed ('brew install node') and NPM ('brew install npm').
+- Wanna develop for android platforms? Please read this [installation documentation](https://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html)
+- Wanna develop for ios platforms? Please read this [installation documentation](https://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html)
+- Please be sure [Cordova](https://cordova.apache.org/) is installed before ('npm install -g cordova')
+- Be sure for this branch that webpack is globally installed on your system ('npm install -g webpack')
 
 ## Installation
 ```sh
