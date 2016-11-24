@@ -74,5 +74,3 @@ npm run build
 - Listing available android virtual devices: run `cordova run android --list`
 - Listing available iOS virtual devices: run `cordova run ios --list`
 - While running an app on simulators or devices, you can visit [chrome://inspect/#devices](chrome://inspect/#devices) to debug your android device> For ios device, open safari, find your device in development tab.
-
-
