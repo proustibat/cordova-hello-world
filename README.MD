@@ -12,7 +12,7 @@ Simple cordova project using cordova plugins, ios and android platforms.
 - Wanna develop for android platforms? Please read this [installation documentation](https://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html)
 - Wanna develop for ios platforms? Please read this [installation documentation](https://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html)
 - Please be sure [Cordova](https://cordova.apache.org/) is installed before ('npm install -g cordova')
-- Be sure for this branch that webpack is globally installed on your system ('npm install -g webpack')
+- Be sure for this branch that [Webpack](https://webpack.github.io/docs/usage.html) is globally installed on your system ('npm install -g webpack')
 
 ## Installation
 ```sh
