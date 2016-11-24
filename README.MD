@@ -12,7 +12,7 @@ Simple cordova project using cordova plugins, form ios platform and android plat
 
 ## Installation
 ```sh
-cordova prepare
+cordova prepare // or npm install
 ```
 
 
@@ -23,36 +23,41 @@ cordova prepare
 * On your browser
  
 ```sh
-cordova serve -l
+cordova serve -l // or npm start
 ```
-Then visit [http://localhost:8000/](http://localhost:8000/)
+*Then visit [http://localhost:8000/](http://localhost:8000/)*
 
-* On android simulator
+* **On android simulator**
  
 ```sh
 cordova emulate android
 ```
 
-* On android device 
+* **On android device**
  
 ```sh
 cordova run android --device
 ```
 
 
-* On ios simulator
+* **On ios simulator**
  
 ```sh
 cordova emulate ios
 ```
 
-* On ios device
+* **On ios device**
  
 ```sh
 cordova run ios --device
 ```
 
 ### Building
+
+```sh
+npm run build
+```
+Command above runs these 2 following commands
 
 ```sh
 cordova build android
