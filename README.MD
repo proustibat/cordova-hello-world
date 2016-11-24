@@ -3,6 +3,10 @@
 Simple cordova project using cordova plugins, form ios platform and android platform.
 This branch adds ES6 environment to develop application based on this medium article [https://medium.com/france/d%C3%A9velopper-vos-applications-mobiles-en-es6-avec-autoroute-js-et-cordova-1231488d3514#.xdjzr53y6](https://medium.com/france/d%C3%A9velopper-vos-applications-mobiles-en-es6-avec-autoroute-js-et-cordova-1231488d3514#.xdjzr53y6)
 
+## What does this branch do ?
+- Create from the [basis/es6-babel-webpack branch](https://github.com/proustibat/cordova-hello-world/tree/basis/es6-babel-webpack) which is the basis branch.
+- Use *merges* to Customize Each Platform as explained in [this documentation section](https://cordova.apache.org/docs/en/latest/guide/cli/index.html#using-merges-to-customize-each-platform)
+
 ## Requirements
 
 - You'll need Node installed (brew install node)
