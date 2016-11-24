@@ -34,12 +34,7 @@ cordova prepare // or npm install
 npm start
 ```
 
-*Command above runs these following commands:*
-
-```sh
-npm run compile:js
-cordova serve -l
-```
+*Note that the command above runs `npm run compile:js && cordova serve -l`*
 
 **Then visit [http://localhost:8000/](http://localhost:8000/)**
 
@@ -56,7 +51,6 @@ cordova emulate android
 npm run compile:js
 cordova run android --device
 ```
-
 
 * **On ios simulator**
  
@@ -78,15 +72,7 @@ cordova run ios --device
 npm run compile:js
 npm run build
 ```
-Command above runs these 2 following commands
-
-```sh
-cordova build android
-```
-
-```sh
-cordova build ios
-```
+*Note that `npm run build` command runs `cordova build android && cordova build ios`*
 
 ## Help
 Some helpful commands
