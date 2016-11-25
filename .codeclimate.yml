@@ -24,9 +24,11 @@ ratings:
   - "**.php"
   - "**.py"
   - "**.rb"
-exclude_paths: [
-  "hooks/**/*",
-  "platforms/**/*",
-  "plugins/**/*",
-  "src/cordova.js"
-]
+exclude_paths:
+  - "hooks/**/*"
+  - "plugins/**/*"
+  - "platforms/**/*"
+  - "www/cordova.js"
+  - "src/cordova.js"
+
+
