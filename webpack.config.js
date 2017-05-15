@@ -1,30 +1,22 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
-    cache: true,
+    cache: false,
     devtool: 'source-map',
-
-
-
     entry: {
-        // hmr: [
-        //     'webpack-dev-server/client?http://localhost:8000',
-        //     'webpack/hot/only-dev-server'
-        // ],
+        hmr: [
+            'webpack-dev-server/client?http://localhost:8080',
+            'webpack/hot/only-dev-server'
+        ],
         index: path.join(__dirname, 'src', 'js', 'index.js')
     },
     output: {
         path: path.join(__dirname, 'www', 'js'),
-        filename: '[name].js',
+        filename: '[name].min.js',
         sourceMapFilename: '[file].map',
         devtoolModuleFilenameTemplate: 'webpack:///[resource-path]?[loaders]'
     },
-
-    // entry: "./src/js/index.js",
-    // output: {
-    //     path: __dirname + "/src",
-    //     filename: "/js/index.min.js"
-    // },
     module: {
         rules: [
             {
@@ -41,7 +33,15 @@ module.exports = {
                     ],
                     cacheDirectory: true
                 }
-            }
+            },
         ]
+    },
+    plugins:[
+        new webpack.HotModuleReplacementPlugin(),
+    ],
+    devServer: {
+        public: 'localhost:8080/www',
+        open: true,
+        hot: true
     }
 };

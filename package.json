@@ -5,10 +5,8 @@
     "main": "index.js",
     "scripts": {
         "install": "cordova prepare",
-        "dev": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development\"",
-        "compile:js": "webpack --optimize-minimize && cp -r src/* www",
-        "start": "npm run compile:js && cordova serve -l",
-        "build": "npm run compile:js && cordova build android && cordova build ios",
+        "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development\"",
+        "build": "webpack --env production && cordova build android && cordova build ios && cordova serve -l",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -32,12 +30,12 @@
         "webpack-dev-server": "^2.4.5"
     },
     "dependencies": {
-        "jquery": "^3.1.1",
-        "cordova-ios": "~4.3.0",
         "cordova-android": "~6.0.0",
+        "cordova-ios": "~4.3.0",
         "cordova-plugin-camera": "~2.3.0",
         "cordova-plugin-crosswalk-webview": "~2.2.0",
-        "cordova-plugin-whitelist": "1"
+        "cordova-plugin-whitelist": "1",
+        "jquery": "^3.1.1"
     },
     "cordova": {
         "platforms": [

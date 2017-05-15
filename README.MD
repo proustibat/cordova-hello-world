@@ -42,43 +42,38 @@ npm install
 
 * **On your browser**: run `npm start`
 
-*Note that the command above runs `npm run compile:js && cordova serve -l`*
+Your browser will open at [http://localhost:8000/www](http://localhost:8000/www)
 
-Then visit [http://localhost:8000/](http://localhost:8000/)
+If you change index.js in sources, then browser will reload automatically.
 
 * **On android simulator**:
 ```sh
-npm run compile:js
 cordova emulate android
 ```
 
 * **On android device**
 (with a usb connected device)
 ```sh
-npm run compile:js
 cordova run android --device
 ```
 
 * **On ios simulator**
 ```sh
-npm run compile:js
 cordova emulate ios
 ```
 
 * **On ios device**
 (with a usb connected device)
 ```sh
-npm run compile:js
 cordova run ios --device
 ```
 
 ### Building
 
 ```sh
-npm run compile:js
 npm run build
 ```
-*Note that `npm run build` command runs `cordova build android && cordova build ios`*
+*Note that `npm run build` command runs `cordova build android && cordova build ios && cordova serve -l`*
 
 ## Help
 - Launch Android SDK Manager: run `android sdk`
