@@ -8,7 +8,6 @@
         Jennifer Proust
     </author>
     <content src="index.html" />
-    <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
     <allow-navigation href="*://*.proustib.at/*" />
     <allow-intent href="http://*/*" />
@@ -24,14 +23,14 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <plugin name="cordova-plugin-camera" spec="~2.3.0" />
-    <engine name="ios" spec="~4.3.0" />
-    <engine name="android" spec="~6.0.0" />
     <preference name="BackgroundColor" value="0xff0000ff" />
     <preference name="DefaultVolumeStream" value="media" />
     <preference name="ErrorUrl" value="error-page.html" />
     <preference name="Fullscreen" value="true" />
     <preference name="Orientation" value="portrait" />
+    <engine name="android" spec="~6.0.0" />
+    <engine name="ios" spec="~4.3.0" />
+    <plugin name="cordova-plugin-camera" spec="~2.3.0" />
     <plugin name="cordova-plugin-crosswalk-webview" spec="~2.2.0">
         <variable name="XWALK_VERSION" value="22+" />
         <variable name="XWALK_LITEVERSION" value="xwalk_core_library_canary:17+" />
@@ -39,4 +38,5 @@
         <variable name="XWALK_MODE" value="embedded" />
         <variable name="XWALK_MULTIPLEAPK" value="true" />
     </plugin>
+    <plugin name="cordova-plugin-whitelist" spec="1" />
 </widget>
